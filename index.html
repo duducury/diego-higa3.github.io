@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <title>Diego Higa's Official Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+      <!-- import three.js file -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.158.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.158.0/examples/jsm/"
+        }
+      }
+    </script>
+   <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+    <script type="module" src="avatar.js"></script>
+
+</head>
+<body>
+ <!--  -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Diego Higa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#homeSection">Home</a>
+            <a class="nav-item nav-link" href="#aboutHigaSection">About Higa</a>
+            <a class="nav-item nav-link" href="#helloguys"> Hello Guys!</a>
+            <a class="nav-item nav-link" href="#higaCar">His Car</a>
+            <a class="nav-item nav-link" href="#buyNow">Buy It Now!</a>
+            <a class="nav-item nav-link" href="#car360">Car 360 View</a>
+            <a class="nav-item nav-link" href="#watchNow">Watch It Now</a>
+            <a class="nav-item nav-link" href="#socialMedia">Social Media</a>
+        </div>
+    </div>
+</nav>
+
+<br>
+<br>
+<br>
+<!--  -->
+
+<div class="container">
+    <div class="header"> 
+        <h1 id="homeSection">Diego Higa <img src="img/brflag.png" alt="Brazil Flag"></h1>
+        <img src="img/higa_profilepg.png" alt="Diego Higa" class="img-fluid rounded-circle">
+        <br> <br>      
+        <p>Car Number: 169</p>
+        <p>Car Manufacturer: Toyota</p>
+        <p>Team Name: Diego Higa Racing Team</p>
+        <p>Sponsors: BC Coilovers, Garret, VPRacing, Litespeed Racing, Street Hunter Designs, Ultimate Wraps, JDM Supreme</p>
+        
+    </div>
+ 
+<!--  -->
+<br>
+<br> 
+
+<hr class="silver-hr"> 
+<h2 id="helloguys">Hello Guys!!</h2>
+<!-- Container for the 3D model -->
+<div id="untitledModel" style="width: 100%; height: 20px;"></div>
+
+<!-- Container for the avatar -->
+<div id="avatar-container">
+    <div id="avatar-loading">Loading...</div>
+</div>
+
+<br>
+<br>   
+
+<!-- "About Higa" Section with Specific Background and Text Color -->
+<div id="aboutHigaSection" class="container">
+    <div class="row align-items-center">
+        <!-- Text Column -->
+        <div class="col-md-6" >
+            <h2 id="aboutHiga"><i class="fas fa-trophy" style="color: #ffd700;"></i> About Higa <i class="fas fa-trophy" style="color: #ffd700;"></i></h2>
+
+            <p>Diego Higa, a professional drift racer from Brazil, has made a significant impact in the drifting world since starting at the age of 14. With numerous championships under his belt, including being an 8-time Super Drift Brasil Champion and the Netflix Hyperdriver Champion, Diego's journey is nothing short of inspirational.</p>
+        </div>
+        <!-- Image Column -->
+        <div class="col-md-6">
+            <img src="img/higa_aboutimg.jpg" class="img-fluid higaImage" alt="Diego Higa">
+        </div>
+    </div>
+</div>
+
+
+    <br>
+    <br> 
+    <hr class="silver-hr"> 
+    <br>
+
+    
+    <br>   
+
+  <!--  -->
+  <h2 id="higaCar"><i class="fas fa-car" style="color: #ffffff;"></i> Diego Higa Car <i class="fas fa-car" style="color: #ffffff;"></i></h2>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="img/higa_caroles_img4.jpg" alt="Diego Higa Car 4">
+          </div>
+          <div class="carousel-item">
+              <img src="img/higa_caroles_img5.jpg" alt="Diego Higa Car 5">
+          </div>
+          <div class="carousel-item">
+              <img src="img/higa_caroles_img6.jpg" alt="Diego Higa Car 6">
+          </div>
+          <div class="carousel-item">
+              <img src="img/higa_caroles_img7.jpg" alt="Diego Higa Car 7">
+          </div>
+          <div class="carousel-item">
+              <img src="img/higa_caroles_img8.jpg" alt="Diego Higa Car 8">
+          </div>
+          <div class="carousel-item">
+              <img src="img/higa_caroles_img9.jpg" alt="Diego Higa Car 9">
+          </div>
+          <div class="carousel-item">
+              <img src="img/higa_caroles_img10.jpg" alt="Diego Higa Car 10">
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+  
+    <br>
+    <br> 
+    <hr class="silver-hr"> 
+    <br>
+    <br>   
+
+   <!--  -->  
+       <!-- Merchandise Section -->
+       <div class="merchandise-section container mt-5"  id="buyNow">
+        <h2 class="text-center mb-4"><i class="fas fa-shopping-cart" style="color: #000000;"></i> Buy It Now! <i class="fas fa-shopping-cart" style="color: #000000;"></i> </h2>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/redteamfront.webp" class="card-img-top" alt="Team Higa Tee">
+                    <div class="card-body">
+                        <h5 class="card-title">Team Higa Tee</h5>
+                        <p class="card-text">Regular price $60.00 USD</p>
+                        <a href="https://www.jdmsupreme.com/products/copy-of-team-higa-tee-v2" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/higafrontnavy.webp" class="card-img-top" alt="Team Higa Tee V2 Red">
+                    <div class="card-body">
+                        <h5 class="card-title">Team Higa Tee V2 Red</h5>
+                        <p class="card-text">Regular price $60.00 USD</p>
+                        <a href="https://www.jdmsupreme.com/products/team-higa-tee-v2" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/higateamgearfront.webp" class="card-img-top" alt="Time for Action T-shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Higa T-shirt</h5>
+                        <p class="card-text">Regular price $30.00 USD</p>
+                        <a href="https://www.jdmsupreme.com/products/team-higa-tee" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="img/timeforactionmock.webp" class="card-img-top" alt="Team Higa Tee V2">
+                    <div class="card-body">
+                        <h5 class="card-title">Team Higa Tee V2</h5>
+                        <p class="card-text">Regular price $60.00 USD</p>
+                        <a href="https://www.jdmsupreme.com/products/time-for-action-tee" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br> 
+    <hr class="silver-hr"> 
+    <br>
+    <br> 
+    
+
+    <h2 id="car360">Car 360 View!</h2>
+    <model-viewer src="Scaniverse2.glb" alt="A 3D model of a car" auto-rotate camera-controls shadow-intensity="1" background-color="#455A64" style="width: 100%; height: 500px;"></model-viewer>
+   
+    <br>
+    <br> 
+    <hr class="silver-hr"> 
+    <br>
+    <br>   
+
+<div class="info" id="watchNow">
+    <h2>Watch Diego in action!</h2>
+    <div class="video-responsive">
+        <iframe src="https://www.youtube.com/embed/rcRVUem-6w4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<br>
+<br> 
+<hr class="silver-hr"> 
+<br>
+<br>   
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
+ <div class="social-media-links" id="socialMedia">
+    <h2>Follow My Journey!</h2>
+    <div class="d-flex  flex-sm-row justify-content-center align-items-center">
+        <div><a href="https://www.facebook.com/diegohigadrift/events/?paipv=0&eav=AfYOyMtw_t8OBGjxT7TcuGdMULlP7y6grZmgNxLuaOQehB8YIJkleXCNS5zHsyRHqjk&_rdr" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a></div>
+        <div><a href="https://www.instagram.com/diegohiga/?hl=en"><i class="fab fa-instagram"></i> Instagram</a></div>
+        <div><a href="https://www.youtube.com/@PilotoDiegoHiga" class="youtube"><i class="fab fa-youtube"></i> YouTube</a></div>
+    </div>
+</div>
+<br>
+<br>  <div style="text-align: center; padding: 20px 0;">
+        <img src="img/hgif2.gif" alt="Logo" style="width: 500px; height: auto;">
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
